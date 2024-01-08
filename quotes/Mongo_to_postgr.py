@@ -11,7 +11,7 @@ from quotesapp.models import Quote, Tag, Author
 
 
 client = MongoClient("mongodb+srv://sadurskyim:123123q@flsx.tisgnah.mongodb.net/?retryWrites=true&w=majority")
-db = client.get_database(name='homework')
+db = client.get_database(name='scrapy')
 
 authors: Cursor = db.authors.find()
 
