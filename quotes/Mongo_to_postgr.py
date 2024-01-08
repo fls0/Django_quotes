@@ -23,7 +23,7 @@ for author in authors:
         description=author['description'],
     )
 
-quotes: Cursor = db.quotes_of.find()
+quotes: Cursor = db.quotes.find()
 
 for quote in quotes:
     tags = []
